@@ -1,0 +1,132 @@
+{
+    "Spaghetti": {
+        "Ingredients": [
+            "pasta",
+            "tomatoes",
+            "minced beef",
+            "buttermilk",
+            "olive oil",
+            "onion",
+            "garlic",
+            "fresh oregano",
+            "salt",
+            "pepper",
+            "parmesan"
+        ],
+        "Instructions": [
+            "boil water",
+            "cook pasta",
+            "chop onion and garlic",
+            "heat olive oil",
+            "fry",
+            "add beef",
+            "stir",
+            "add: buttermilk, chopped tomatoes, salt, pepper, fresh oregano",
+            "when ready, add parmesan on top"
+        ]
+    },
+    "Carbonara": {
+        "Ingredients": [
+            "pasta",
+            "bacon",
+            "olive oil",
+            "garlic",
+            "eggs",
+            "parmesan",
+            "mascarpone"
+        ],
+        "Instructions": [
+            "boil water",
+            "cook pasta",
+            "chop garlic",
+            "heat olive oil",
+            "fry",
+            "add bacon",
+            "mix eggs, mascarpone, parmesan, water from boiled pasta and add to bacon",
+            "add pasta and stir"
+        ]
+    },
+    "Risotto": {
+        "Ingredients": [
+            "risotto rice",
+            "chicken",
+            "pine nuts",
+            "parmesan",
+            "onion",
+            "butternut squash",
+            "olive oil",
+            "white wine",
+            "sage leaves",
+            "salt",
+            "pepper",
+            "butter"
+        ],
+        "Instructions": [
+            "chop pine nuts, parmesan, onion, butternut squash, oil",
+            "saute",
+            "add: wine, rice and cook",
+            "add: chicken, salt, pepper",
+            "add: butter, parmesan"
+        ]
+    },
+    "Wontons": {
+        "Ingredients": [
+            "water",
+            "egg",
+            "salt",
+            "flour",
+            "ginger",
+            "garlic",
+            "peanuts",
+            "peanuts oil",
+            "soy sauce",
+            "brown sugar",
+            "wine",
+            "chilli powder",
+            "fish sauce",
+            "pepper",
+            "white pepper",
+            "Chinese five spice",
+            "cornflour",
+            "oil",
+            "onion",
+            "prawns"
+        ],
+        "Instructions": [
+            "mix: water, egg, salt, flour",
+            "saute: ginger, garlic, peanut oil",
+            "add: peanuts, water, soy, sugar, wine, chilli",
+            "mix: onion, ginger, garlic, prawns, water, fish sauce, pepper, Chinese five spice, cornflour",
+            "cook",
+            "serve with peanut sauce and chilli oil"
+        ]
+    },
+    "Hungarian Hash Browns": {
+        "Ingredients": [
+            "potatoes",
+            "egg",
+            "flour",
+            "onion",
+            "garlic",
+            "oregano",
+            "salt",
+            "pepper",
+            "beef",
+            "oil",
+            "red pepper",
+            "tomato concentrate",
+            "chilli",
+            "bay leaves",
+            "courgette",
+            "parsley",
+            "fresh cream"
+        ],
+        "Instructions": [
+            "chop: onion, garlic, potatoes",
+            "add: flour, salt, pepper, oregano, egg",
+            "add oil, fry beef",
+            "add spices, herbs, vegetables and cook",
+            "add tomato concentrate and fresh cream"
+        ]
+    }
+}
