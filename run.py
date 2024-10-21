@@ -50,6 +50,21 @@ def search_recipe():
     else:
         print(f"'{name}' not found.")
 
+def search_recipe_by_ingredient():
+    """
+    Search recipes that contain a specific ingredient
+    """
+    ingredient = input("Enter the ingredient to search for: ").strip()
+    found_recipes = [recipe_name for recipe_name, recipe_data in recipe.items() 
+                    if any(ingredient == ingr.strip() for ingr in recipe_data["Ingredients"])]
+    
+    if found_recipes:
+        print(f"\nRecipes that contain '{ingredient}':")
+        for recipe_name in found_recipes:
+            print(f"- {recipe_name}")
+    else:
+        print(f"No recipes found with the ingredient '{ingredient}'.")
+
 def main():
     """
     Main function to display user options
@@ -59,6 +74,7 @@ def main():
         print("1. Add a new recipe")
         print("2. Add a secret ingredient to a recipe")
         print("3. Search for a recipe by name")
+        print("4. Search for recipes by an ingredient you have in the fridge")
 
         choice = input("Choose one option: ").strip()
         if choice == "1":
@@ -67,6 +83,8 @@ def main():
             add_secret_ingredient()
         elif choice == "3":
             search_recipe()
+        elif choice == "4":
+            search_recipe_by_ingredient()
             break
         else:
             print("Invalid choice, please try again.")
