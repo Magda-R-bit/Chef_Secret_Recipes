@@ -76,6 +76,19 @@ def display_all_recipes():
     else:
         print("No recipes available.")
 
+def delete_recipe():
+    """
+    Deletes a recipe by name
+    """
+    name = input("Enter the recipe name to delete: ").strip()
+
+    if name in recipe:
+        del recipe[name]
+        print(f"Recipe '{name}' deleted successfully.")
+    else:
+        print(f"'{name}' not found in the recipe book.")
+    save()
+
 def main():
     """
     Main function to display user options
@@ -87,6 +100,7 @@ def main():
         print("3. Search for a recipe by name")
         print("4. Search for recipes by an ingredient you have in the fridge")
         print("5. Display all recipes")
+        print("6. Delete a recipe")
 
         choice = input("Choose one option: ").strip()
         if choice == "1":
@@ -99,6 +113,8 @@ def main():
             search_recipe_by_ingredient()
         elif choice == "5":
             display_all_recipes()
+        elif choice == "6":
+            delete_recipe()
             break
         else:
             print("Invalid choice, please try again.")
