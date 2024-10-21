@@ -121,6 +121,7 @@ def main():
         print("5. Display all recipes")
         print("6. Delete a recipe")
         print("7. Delete an ingredient from a recipe")
+        print("8. Exit")
 
         choice = input("Choose one option: ").strip()
         if choice == "1":
@@ -137,6 +138,8 @@ def main():
             delete_recipe()
         elif choice == "7":
             delete_ingredient()
+        elif choice == "8":
+            print("Exiting...")
             break
         else:
             print("Invalid choice, please try again.")
