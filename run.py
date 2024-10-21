@@ -65,6 +65,17 @@ def search_recipe_by_ingredient():
     else:
         print(f"No recipes found with the ingredient '{ingredient}'.")
 
+def display_all_recipes():
+    """
+    Displays all recipes stored in the Chef Secret Recipes Book
+    """
+    if recipe:
+        print("\nAvailable recipes:")
+        for recipe_name in recipe:
+            print(f"- {recipe_name}")
+    else:
+        print("No recipes available.")
+
 def main():
     """
     Main function to display user options
@@ -75,6 +86,7 @@ def main():
         print("2. Add a secret ingredient to a recipe")
         print("3. Search for a recipe by name")
         print("4. Search for recipes by an ingredient you have in the fridge")
+        print("5. Display all recipes")
 
         choice = input("Choose one option: ").strip()
         if choice == "1":
@@ -85,6 +97,8 @@ def main():
             search_recipe()
         elif choice == "4":
             search_recipe_by_ingredient()
+        elif choice == "5":
+            display_all_recipes()
             break
         else:
             print("Invalid choice, please try again.")
