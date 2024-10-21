@@ -38,6 +38,18 @@ def save():
     with open('recipe.json', "w") as file:
         json.dump(recipe, file, indent=4)
 
+def search_recipe():
+    """
+    Search for a recipe
+    """
+    name = input("Enter the recipe name to search: ").strip()
+    if name in recipe:
+        print(f"\nRecipe for {name}:")
+        print("Ingredients:", recipe[name]["Ingredients"])
+        print("Instructions:", recipe[name]["Instructions"])
+    else:
+        print(f"'{name}' not found.")
+
 def main():
     """
     Main function to display user options
@@ -46,12 +58,15 @@ def main():
         print("\nChef Secret Recipes Book:")
         print("1. Add a new recipe")
         print("2. Add a secret ingredient to a recipe")
+        print("3. Search for a recipe by name")
 
         choice = input("Choose one option: ").strip()
         if choice == "1":
             add_new_recipe()
         elif choice == "2":
             add_secret_ingredient()
+        elif choice == "3":
+            search_recipe()
             break
         else:
             print("Invalid choice, please try again.")
