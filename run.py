@@ -14,6 +14,7 @@ def add_new_recipe():
 
     recipe[name] = {"Ingredients": ingredients, "Instructions": instructions}
     print(f"Recipe '{name}' added successfully.")
+    save()
 
 def add_secret_ingredient():
     """
@@ -27,6 +28,15 @@ def add_secret_ingredient():
         print(f"Ingredient '{secret_ingredient}' added to recipe '{name}'.")
     else:
         print(f"'{name}' not found in the Chef Secret Recipes.")
+    save()
+
+def save():
+    """
+    Save changes in recipe.json file when adding or deleting
+    recipes or ingredients
+    """
+    with open('recipe.json', "w") as file:
+        json.dump(recipe, file, indent=4)
 
 def main():
     """
