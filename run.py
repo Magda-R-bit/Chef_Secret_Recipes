@@ -89,6 +89,25 @@ def delete_recipe():
         print(f"'{name}' not found in the recipe book.")
     save()
 
+def delete_ingredient():
+    """
+    Deletes an ingredient from a recipe by name
+    """
+    name = input("Enter the recipe name to delete an ingredient from: ")
+
+    if name in recipe:
+        ingredients = recipe[name]["Ingredients"]
+        ingredient_to_delete = input("Enter the name of the ingredient to delete: ")
+        if ingredient_to_delete in ingredients:
+            ingredients.remove(ingredient_to_delete)
+            print(f"Ingredient '{ingredient_to_delete}' deleted from recipe '{name}'.")
+            save()
+        else:
+            print(f"Ingredient '{ingredient_to_delete}' not found in recipe '{name}'.")
+    else:
+        print(f"'{name}' not found in the Chef Secret Recipes.")
+
+
 def main():
     """
     Main function to display user options
@@ -101,6 +120,7 @@ def main():
         print("4. Search for recipes by an ingredient you have in the fridge")
         print("5. Display all recipes")
         print("6. Delete a recipe")
+        print("7. Delete an ingredient from a recipe")
 
         choice = input("Choose one option: ").strip()
         if choice == "1":
@@ -115,6 +135,8 @@ def main():
             display_all_recipes()
         elif choice == "6":
             delete_recipe()
+        elif choice == "7":
+            delete_ingredient()
             break
         else:
             print("Invalid choice, please try again.")
