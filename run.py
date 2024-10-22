@@ -43,13 +43,21 @@ def save():
 
 def search_recipe():
     """
-    Search for a recipe
+    Search for a recipe by name
     """
     name = input("Enter the recipe name to search: ").strip()
     if name in recipe:
         print(f"\nRecipe for {name}:")
-        print("Ingredients:", recipe[name]["Ingredients"])
-        print("Instructions:", recipe[name]["Instructions"])
+        # Display list with one ingredient per line
+        print("\nIngredients:")
+        for ingredient in recipe[name]["Ingredients"]:
+            print(f"- {ingredient}")
+        # Display instruction with numbered steps
+        print("\nInstructions:")
+        for step, instruction in enumerate(
+            recipe[name]["Instructions"], start=1
+        ):
+            print(f"{step}. {instruction}")
     else:
         print(f"'{name}' not found.")
 

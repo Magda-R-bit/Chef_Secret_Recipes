@@ -21,7 +21,10 @@
             "fry",
             "add beef",
             "stir",
-            "add: buttermilk, chopped tomatoes, salt, pepper, fresh oregano",
+            "add: buttermilk",
+            "chopped tomatoes",
+            "salt, pepper",
+            "fresh oregano",
             "when ready, add parmesan on top"
         ]
     },
@@ -42,7 +45,10 @@
             "heat olive oil",
             "fry",
             "add bacon",
-            "mix eggs, mascarpone, parmesan, water from boiled pasta and add to bacon",
+            "mix eggs with mascarpone",
+            "add: parmesan",
+            "water from boiled pasta",
+            "add to bacon",
             "add pasta and stir"
         ]
     },
@@ -62,7 +68,11 @@
             "butter"
         ],
         "Instructions": [
-            "chop pine nuts, parmesan, onion, butternut squash, oil",
+            "chop pine nuts",
+            "parmesan",
+            "onion", 
+            "butternut squash",
+            "add: oil",
             "saute",
             "add: wine, rice and cook",
             "add: chicken, salt, pepper",
@@ -97,8 +107,14 @@
         "Instructions": [
             "mix: water, egg, salt, flour",
             "saute: ginger, garlic, peanut oil",
-            "add: peanuts, water, soy, sugar, wine, chilli",
-            "mix: onion, ginger, garlic, prawns, water, fish sauce, pepper, Chinese five spice, cornflour",
+            "add: peanuts, water, soy",
+            "sugar, wine, chilli",
+            "mix: onion, ginger",
+            "garlic, prawns",
+            "water, fish sauce",
+            "pepper",
+            "Chinese five spice",
+            "cornflour",
             "cook",
             "serve with peanut sauce and chilli oil"
         ]
