@@ -16,6 +16,7 @@ def add_new_recipe():
     print(f"Recipe '{name}' added successfully.")
     save()
 
+
 def add_secret_ingredient():
     """
     Add the secret ingredient to the chosen recipe
@@ -30,6 +31,7 @@ def add_secret_ingredient():
         print(f"'{name}' not found in the Chef Secret Recipes.")
     save()
 
+
 def save():
     """
     Save changes in recipe.json file when adding or deleting
@@ -37,6 +39,7 @@ def save():
     """
     with open('recipe.json', "w") as file:
         json.dump(recipe, file, indent=4)
+
 
 def search_recipe():
     """
@@ -50,14 +53,18 @@ def search_recipe():
     else:
         print(f"'{name}' not found.")
 
+
 def search_recipe_by_ingredient():
     """
     Search recipes that contain a specific ingredient
     """
     ingredient = input("Enter the ingredient to search for: ").strip()
-    found_recipes = [recipe_name for recipe_name, recipe_data in recipe.items() 
-                    if any(ingredient == ingr.strip() for ingr in recipe_data["Ingredients"])]
-    
+    found_recipes = [
+        recipe_name for recipe_name, recipe_data in recipe.items()
+        if any(ingredient == ingr.strip()
+               for ingr in recipe_data["Ingredients"])
+    ]
+
     if found_recipes:
         print(f"\nRecipes that contain '{ingredient}':")
         for recipe_name in found_recipes:
@@ -65,9 +72,11 @@ def search_recipe_by_ingredient():
     else:
         print(f"No recipes found with the ingredient '{ingredient}'.")
 
+
 def display_all_recipes():
     """
-    Displays all recipes stored in the Chef Secret Recipes Book
+    Displays all recipes stored in
+    the Chef Secret Recipes Book
     """
     if recipe:
         print("\nAvailable recipes:")
@@ -75,6 +84,7 @@ def display_all_recipes():
             print(f"- {recipe_name}")
     else:
         print("No recipes available.")
+
 
 def delete_recipe():
     """
@@ -89,6 +99,7 @@ def delete_recipe():
         print(f"'{name}' not found in the recipe book.")
     save()
 
+
 def delete_ingredient():
     """
     Deletes an ingredient from a recipe by name
@@ -97,13 +108,20 @@ def delete_ingredient():
 
     if name in recipe:
         ingredients = recipe[name]["Ingredients"]
-        ingredient_to_delete = input("Enter the name of the ingredient to delete: ")
+        ingredient_to_delete = input(
+            "Enter the name of the ingredient to delete: ")
         if ingredient_to_delete in ingredients:
             ingredients.remove(ingredient_to_delete)
-            print(f"Ingredient '{ingredient_to_delete}' deleted from recipe '{name}'.")
+            print(
+                f"Ingredient '{ingredient_to_delete}'"
+                f"deleted from recipe '{name}'."
+                )
             save()
         else:
-            print(f"Ingredient '{ingredient_to_delete}' not found in recipe '{name}'.")
+            print(
+                f"Ingredient '{ingredient_to_delete}'"
+                f"not found in recipe '{name}'."
+                )
     else:
         print(f"'{name}' not found in the Chef Secret Recipes.")
 
@@ -143,6 +161,7 @@ def main():
             break
         else:
             print("Invalid choice, please try again.")
+
 
 # Call the main function
 if __name__ == "__main__":
