@@ -5,7 +5,8 @@ with open('recipe.json', 'r') as file:
 
 import colorama
 from colorama import Fore, Back, Style
-colorama.init(autoreset=True)
+from colorama import init
+init(autoreset=True)
 
 print(Fore.MAGENTA + """
 ╔═╗┬ ┬┌─┐┌─┐  ╔═╗┌─┐┌─┐┬─┐┌─┐┌┬┐  ╦═╗┌─┐┌─┐┬┌─┐┌─┐┌─┐
@@ -166,7 +167,7 @@ def main():
     Main function to display user options
     """
     while True:
-        print("\nChef Secret Recipes Book:")
+        print(Fore.MAGENTA + "\nChef Secret Recipes Book:")
         print("1. Add a new recipe")
         print("2. Add a secret ingredient to a recipe")
         print("3. Search for a recipe by name")
@@ -176,7 +177,7 @@ def main():
         print("7. Delete an ingredient from a recipe")
         print("8. Exit")
 
-        choice = input("Choose one option: ").strip()
+        choice = input(Fore.CYAN + "Choose one option: ").strip()
         if choice == "1":
             add_new_recipe()
         elif choice == "2":
@@ -192,7 +193,7 @@ def main():
         elif choice == "7":
             delete_ingredient()
         elif choice == "8":
-            print("Exiting...")
+            print(Fore.GREEN + "Exiting...")
             break
         else:
             print("Invalid choice, please try again.")
