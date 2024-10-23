@@ -5,8 +5,7 @@ with open('recipe.json', 'r') as file:
 
 import colorama
 from colorama import Fore, Back, Style
-from colorama import init
-init(autoreset=True)
+colorama.init(autoreset=True)
 
 print(Fore.MAGENTA + """
 ╔═╗┬ ┬┌─┐┌─┐  ╔═╗┌─┐┌─┐┬─┐┌─┐┌┬┐  ╦═╗┌─┐┌─┐┬┌─┐┌─┐┌─┐
@@ -56,7 +55,7 @@ def add_secret_ingredient():
         recipe[name]["Ingredients"].append(secret_ingredient)
         print(f"Ingredient '{secret_ingredient}' added to recipe '{name}'.")
     else:
-        print(f"'{name}' not found in the Chef Secret Recipes.")
+        print(Fore.RED + f"'{name}' not found in the Chef Secret Recipes.")
     save()
 
 
@@ -87,7 +86,7 @@ def search_recipe():
         ):
             print(f"{step}. {instruction}")
     else:
-        print(f"'{name}' not found.")
+        print(Fore.RED + f"'{name}' not found.")
 
 
 def search_recipe_by_ingredient():
@@ -106,7 +105,9 @@ def search_recipe_by_ingredient():
         for recipe_name in found_recipes:
             print(f"- {recipe_name}")
     else:
-        print(f"No recipes found with the ingredient '{ingredient}'.")
+        print(
+            Fore.RED + f"No recipes found with the ingredient '{ingredient}'."
+            )
 
 
 def display_all_recipes():
@@ -119,7 +120,7 @@ def display_all_recipes():
         for recipe_name in recipe:
             print(f"- {recipe_name}")
     else:
-        print("No recipes available.")
+        print(Fore.RED + "No recipes available.")
 
 
 def delete_recipe():
@@ -132,7 +133,7 @@ def delete_recipe():
         del recipe[name]
         print(f"Recipe '{name}' deleted successfully.")
     else:
-        print(f"'{name}' not found in the recipe book.")
+        print(Fore.RED + f"'{name}' not found in the recipe book.")
     save()
 
 
@@ -155,11 +156,12 @@ def delete_ingredient():
             save()
         else:
             print(
+                Fore.RED +
                 f"Ingredient '{ingredient_to_delete}'"
                 f"not found in recipe '{name}'."
                 )
     else:
-        print(f"'{name}' not found in the Chef Secret Recipes.")
+        print(Fore.RED + f"'{name}' not found in the Chef Secret Recipes.")
 
 
 def main():
@@ -196,7 +198,7 @@ def main():
             print(Fore.GREEN + "Exiting...")
             break
         else:
-            print("Invalid choice, please try again.")
+            print(Fore.RED + "Invalid choice, please try again.")
 
 
 # Call the main function
