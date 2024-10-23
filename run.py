@@ -3,6 +3,33 @@ import json
 with open('recipe.json', 'r') as file:
     recipe = json.load(file)
 
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
+
+print(Fore.MAGENTA + """
+╔═╗┬ ┬┌─┐┌─┐  ╔═╗┌─┐┌─┐┬─┐┌─┐┌┬┐  ╦═╗┌─┐┌─┐┬┌─┐┌─┐┌─┐
+║  ├─┤├┤ ├┤   ╚═╗├┤ │  ├┬┘├┤  │   ╠╦╝├┤ │  │├─┘├┤ └─┐
+╚═╝┴ ┴└─┘└    ╚═╝└─┘└─┘┴└─└─┘ ┴   ╩╚═└─┘└─┘┴┴  └─┘└─┘   
+""")
+print(Fore.GREEN + """                                                                                                                
+    __________________   __________________
+.-/|                  \ /                  |\-.
+||||                   |                   ||||
+||||                   |                   ||||
+||||    Chef Secret    |  - Spaghetti      ||||                         
+||||      Recipes      |  - Carbonara      ||||
+||||                   |  - Risotto        ||||
+||||   (\              |  - Wontons        ||||
+||||    ;'.----..      |  - Hungarian      ||||
+||||  /\`        `/\   |    Hash Browns    ||||
+||||    '.      .'     |                   ||||
+||||      ''''''       |                   ||||
+||||__________________ | __________________||||
+||/===================\|/===================\||
+''-------------------~___~-------------------''
+""")
+
 
 def add_new_recipe():
     """
