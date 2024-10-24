@@ -11,7 +11,7 @@ print(Fore.MAGENTA + """
           ╔═╗┬ ┬┌─┐┌─┐  ╔═╗┌─┐┌─┐┬─┐┌─┐┌┬┐  ╦═╗┌─┐┌─┐┬┌─┐┌─┐┌─┐
           ║  ├─┤├┤ ├┤   ╚═╗├┤ │  ├┬┘├┤  │   ╠╦╝├┤ │  │├─┘├┤ └─┐
           ╚═╝┴ ┴└─┘└    ╚═╝└─┘└─┘┴└─└─┘ ┴   ╩╚═└─┘└─┘┴┴  └─┘└─┘""")
-print(Fore.GREEN + """                                                                                                                
+print(Fore.GREEN + """
                  _________________     _________________
               .:|                 '. .'                 |:.
               |||    Chef Secret    |  - Spaghetti      |||
@@ -22,8 +22,9 @@ print(Fore.GREEN + """
               |||  ::`  Soup  `::   |    Hash Browns    |||
               |||    '.______.'     |                   |||
               |||_________________  | __________________|||
-              |.'================== | =================='.| 
+              |.'================== | =================='.|
               '-------------------~___~-------------------' """)
+
 
 def add_new_recipe():
     """
@@ -42,8 +43,10 @@ def add_new_recipe():
     ingredients = input(
         Fore.LIGHTYELLOW_EX + "Enter ingredients separated by commas: "
         ).split(",")
-        
-    instructions = input(Fore.LIGHTYELLOW_EX + "Enter instructions: ").split(",")
+
+    instructions = input(
+        Fore.LIGHTYELLOW_EX + "Enter instructions: "
+        ).split(",")
 
     recipe[name] = {"Ingredients": ingredients, "Instructions": instructions}
     print(Fore.GREEN + f"Recipe '{name}' added successfully.")
@@ -65,7 +68,7 @@ def add_secret_ingredient():
         recipe[name]["Ingredients"].append(secret_ingredient)
         print(
             Fore.GREEN +
-            f"Secret Ingredient '{secret_ingredient}' added to recipe '{name}'."
+            f"Secret Ingredient '{secret_ingredient}'added to recipe'{name}'."
             )
     else:
         print(Fore.RED + f"'{name}' not found in the Chef Secret Recipes.")
