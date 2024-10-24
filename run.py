@@ -14,7 +14,7 @@ print(Fore.MAGENTA + """
 """)
 print(Fore.GREEN + """                                                                                                                
     __________________   __________________
-.-/|                  \ /                  |\-.
+.//|                  \ /                  |\\.
 ||||                   |                   ||||
 ||||                   |                   ||||
 ||||    Chef Secret    |  - Spaghetti      ||||                         
@@ -26,7 +26,7 @@ print(Fore.GREEN + """
 ||||    '.      .'     |                   ||||
 ||||      ''''''       |                   ||||
 ||||__________________ | __________________||||
-||/===================\|/===================\||
+||//=================\\|//=================\\||
 ''-------------------~___~-------------------''
 """)
 
@@ -35,12 +35,14 @@ def add_new_recipe():
     """
     Add new recipe to Chef Secret Recipes Book in recipe.json file
     """
-    name = input("Enter the recipe name: ").strip()
-    ingredients = input("Enter ingredients separated by commas: ").split(",")
-    instructions = input("Enter instructions: ").strip()
+    name = input(Fore.LIGHTYELLOW_EX + "Enter the recipe name: ").strip()
+    ingredients = input(
+        Fore.LIGHTYELLOW_EX + "Enter ingredients separated by commas: "
+        ).split(",")
+    instructions = input(Fore.LIGHTYELLOW_EX + "Enter instructions: ").split(",")
 
     recipe[name] = {"Ingredients": ingredients, "Instructions": instructions}
-    print(f"Recipe '{name}' added successfully.")
+    print(Fore.GREEN + f"Recipe '{name}' added successfully.")
     save()
 
 
@@ -48,12 +50,19 @@ def add_secret_ingredient():
     """
     Add the secret ingredient to the chosen recipe
     """
-    name = input("Enter the recipe name to add secret ingredient to: ").strip()
+    name = input(
+        Fore.LIGHTYELLOW_EX +
+        "Enter the recipe name to add secret ingredient to: "
+        ).strip()
 
     if name in recipe:
-        secret_ingredient = input("Enter the secret ingredient: ").strip()
+        secret_ingredient = input(
+            Fore.LIGHTYELLOW_EX + "Enter the secret ingredient: ").strip()
         recipe[name]["Ingredients"].append(secret_ingredient)
-        print(f"Ingredient '{secret_ingredient}' added to recipe '{name}'.")
+        print(
+            Fore.GREEN +
+            f"Secret Ingredient '{secret_ingredient}' added to recipe '{name}'."
+            )
     else:
         print(Fore.RED + f"'{name}' not found in the Chef Secret Recipes.")
     save()
@@ -72,15 +81,17 @@ def search_recipe():
     """
     Search for a recipe by name
     """
-    name = input("Enter the recipe name to search: ").strip()
+    name = input(
+        Fore.LIGHTYELLOW_EX + "Enter the recipe name to search: "
+        ).strip()
     if name in recipe:
-        print(f"\nRecipe for {name}:")
+        print(Fore.LIGHTYELLOW_EX + f"\nRecipe for {name}:")
         # Display list with one ingredient per line
-        print("\nIngredients:")
+        print(Fore.LIGHTYELLOW_EX + "\nIngredients:")
         for ingredient in recipe[name]["Ingredients"]:
             print(f"- {ingredient}")
         # Display instruction with numbered steps
-        print("\nInstructions:")
+        print(Fore.LIGHTYELLOW_EX + "\nInstructions:")
         for step, instruction in enumerate(
             recipe[name]["Instructions"], start=1
         ):
@@ -93,7 +104,9 @@ def search_recipe_by_ingredient():
     """
     Search recipes that contain a specific ingredient
     """
-    ingredient = input("Enter the ingredient to search for: ").strip()
+    ingredient = input(
+        Fore.LIGHTYELLOW_EX + "Enter the ingredient to search for: "
+        ).strip()
     found_recipes = [
         recipe_name for recipe_name, recipe_data in recipe.items()
         if any(ingredient == ingr.strip()
@@ -101,7 +114,7 @@ def search_recipe_by_ingredient():
     ]
 
     if found_recipes:
-        print(f"\nRecipes that contain '{ingredient}':")
+        print(Fore.GREEN + f"\nRecipes that contain '{ingredient}':")
         for recipe_name in found_recipes:
             print(f"- {recipe_name}")
     else:
@@ -116,7 +129,7 @@ def display_all_recipes():
     the Chef Secret Recipes Book
     """
     if recipe:
-        print("\nAvailable recipes:")
+        print(Fore.MAGENTA + "\nAvailable recipes:")
         for recipe_name in recipe:
             print(f"- {recipe_name}")
     else:
@@ -127,11 +140,13 @@ def delete_recipe():
     """
     Deletes a recipe by name
     """
-    name = input("Enter the recipe name to delete: ").strip()
+    name = input(
+        Fore.LIGHTYELLOW_EX + "Enter the recipe name to delete: "
+        ).strip()
 
     if name in recipe:
         del recipe[name]
-        print(f"Recipe '{name}' deleted successfully.")
+        print(Fore.GREEN + f"Recipe '{name}' deleted successfully.")
     else:
         print(Fore.RED + f"'{name}' not found in the recipe book.")
     save()
@@ -141,7 +156,10 @@ def delete_ingredient():
     """
     Deletes an ingredient from a recipe by name
     """
-    name = input("Enter the recipe name to delete an ingredient from: ")
+    name = input(
+        Fore.LIGHTYELLOW_EX +
+        "Enter the recipe name to delete an ingredient from: "
+        )
 
     if name in recipe:
         ingredients = recipe[name]["Ingredients"]
@@ -150,7 +168,8 @@ def delete_ingredient():
         if ingredient_to_delete in ingredients:
             ingredients.remove(ingredient_to_delete)
             print(
-                f"Ingredient '{ingredient_to_delete}'"
+                Fore.GREEN +
+                f"Ingredient '{ingredient_to_delete}' "
                 f"deleted from recipe '{name}'."
                 )
             save()
