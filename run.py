@@ -14,7 +14,7 @@ print(Fore.MAGENTA + """
 print(Fore.GREEN + """                                                                                                                
                  _________________     _________________
               .:|                 '. .'                 |:.
-              |||    Chef Secret    |  - Spaghetti      |||                         
+              |||    Chef Secret    |  - Spaghetti      |||
               |||      Recipes      |  - Carbonara      |||
               |||                   |  - Risotto        |||
               |||                   |  - Wontons        |||
@@ -29,10 +29,20 @@ def add_new_recipe():
     """
     Add new recipe to Chef Secret Recipes Book in recipe.json file
     """
-    name = input(Fore.LIGHTYELLOW_EX + "Enter the recipe name: ").strip()
+    while True:
+        name = input(
+            Fore.LIGHTYELLOW_EX + "Enter the recipe name (letters only): "
+            ).strip()
+
+        if name.isalpha():
+            break
+        else:
+            print(Fore.RED + "Invalid name. Please use letters only.")
+
     ingredients = input(
         Fore.LIGHTYELLOW_EX + "Enter ingredients separated by commas: "
         ).split(",")
+        
     instructions = input(Fore.LIGHTYELLOW_EX + "Enter instructions: ").split(",")
 
     recipe[name] = {"Ingredients": ingredients, "Instructions": instructions}
