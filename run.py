@@ -136,7 +136,7 @@ def display_all_recipes():
     the Chef Secret Recipes Book
     """
     if recipe:
-        print(Fore.MAGENTA + "\nAvailable recipes:")
+        print(Fore.LIGHTMAGENTA_EX + "\nAvailable recipes:")
         for recipe_name in recipe:
             print(f"- {recipe_name}")
     else:
@@ -195,7 +195,7 @@ def main():
     Main function to display user options
     """
     while True:
-        print(Fore.MAGENTA + "\nChef Secret Recipes Book:")
+        print(Fore.LIGHTMAGENTA_EX + "\nChef Secret Recipes Book:")
         print("1. Add a new recipe")
         print("2. Add a secret ingredient to a recipe")
         print("3. Search for a recipe by name")
