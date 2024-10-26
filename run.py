@@ -109,7 +109,7 @@ def search_recipe():
 
 def search_recipe_by_ingredient():
     """
-    Search recipes that contain a specific ingredient
+    Search for recipes that contain a specific ingredient
     """
     ingredient = input(
         Fore.LIGHTYELLOW_EX + "Enter the ingredient to search for: "
@@ -132,7 +132,7 @@ def search_recipe_by_ingredient():
 
 def display_all_recipes():
     """
-    Displays all recipes stored in
+    Display all recipes stored in
     the Chef Secret Recipes Book
     """
     if recipe:
@@ -145,7 +145,7 @@ def display_all_recipes():
 
 def delete_recipe():
     """
-    Deletes a recipe by name
+    Delete a recipe by name
     """
     name = input(
         Fore.LIGHTYELLOW_EX + "Enter the recipe name to delete: "
@@ -161,7 +161,7 @@ def delete_recipe():
 
 def delete_ingredient():
     """
-    Deletes an ingredient from a recipe by name
+    Delete an ingredient from a recipe by name
     """
     name = input(
         Fore.LIGHTYELLOW_EX +
