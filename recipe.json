@@ -102,7 +102,7 @@
             "onion",
             "prawns",
             "parsley",
-            "stock"
+            "* stock"
         ],
         "Instructions": [
             "mix: water, egg, salt, flour",

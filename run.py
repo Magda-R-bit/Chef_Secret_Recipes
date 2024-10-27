@@ -64,11 +64,16 @@ def add_secret_ingredient():
 
     if name in recipe:
         secret_ingredient = input(
-            Fore.LIGHTYELLOW_EX + "Enter the secret ingredient: ").strip()
+            Fore.LIGHTYELLOW_EX +
+            "Enter the secret ingredient(prefix secret ingredient with *): "
+            ).strip()
         recipe[name]["Ingredients"].append(secret_ingredient)
         print(
             Fore.GREEN +
-            f"Secret Ingredient '{secret_ingredient}'added to recipe'{name}'."
+            "Secret Ingredient" +
+            Fore.CYAN + f"'{secret_ingredient}'" + Style.RESET_ALL +
+            Fore.GREEN + f"added to recipe" + Style.RESET_ALL +
+            Fore.CYAN + f" '{name}'."
             )
     else:
         print(Fore.RED + f"'{name}' not found in the Chef Secret Recipes.")
