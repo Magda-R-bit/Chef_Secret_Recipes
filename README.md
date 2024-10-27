@@ -61,6 +61,11 @@ Additionally, users can search for a recipes based on ingredients they have on h
 
 ## Flowchart
 
+The flowchart for Chef Secret Recipe Book visualizes the structure and main operations.
+
+
+![Screenshot of Flowchart](screenshots/Flowchart.png)
+
 ## Features
 
 
