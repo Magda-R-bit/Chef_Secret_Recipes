@@ -61,7 +61,7 @@ def add_secret_ingredient():
     name = input(
         Fore.LIGHTYELLOW_EX +
         "Enter the recipe name to add secret ingredient to: "
-        ).strip()
+        ).strip().title()
 
     if name in recipe:
         secret_ingredient = input(

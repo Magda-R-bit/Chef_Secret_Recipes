@@ -198,7 +198,8 @@
             "water",
             "vege",
             "butter",
-            "onion"
+            "onion",
+            "* milk"
         ],
         "Instructions": [
             "mix",
