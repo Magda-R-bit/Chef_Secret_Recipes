@@ -35,18 +35,19 @@ def add_new_recipe():
             Fore.LIGHTYELLOW_EX + "Enter the recipe name (letters only): "
             ).strip()
 
-        if name.isalpha():
+        if all(part.isalpha() for part in name.split()):
+            name = name.title()
             break
         else:
             print(Fore.RED + "Invalid name. Please use letters only.")
 
-    ingredients = input(
+    ingredients = [ingredient.strip() for ingredient in input(
         Fore.LIGHTYELLOW_EX + "Enter ingredients separated by commas: "
-        ).split(",")
+        ).split(",")]
 
-    instructions = input(
+    instructions = [instruction.strip() for instruction in input(
         Fore.LIGHTYELLOW_EX + "Enter instructions: "
-        ).split(",")
+        ).split(",")]
 
     recipe[name] = {"Ingredients": ingredients, "Instructions": instructions}
     print(Fore.GREEN + f"Recipe '{name}' added successfully.")
