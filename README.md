@@ -119,6 +119,10 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 
 ![Screenshot of Python Linter](screenshots/PythonLinter.png)
 
+- Lighthouse Testing
+
+![Lighthouse Testing](screenshots/Lighthouse.png)
+
 ## Bugs
 
 
