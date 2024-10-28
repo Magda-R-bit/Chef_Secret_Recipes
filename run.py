@@ -96,7 +96,7 @@ def search_recipe():
     """
     name = input(
         Fore.LIGHTYELLOW_EX + "Enter the recipe name to search: "
-        ).strip()
+        ).strip().title()
     if name in recipe:
         print(Fore.LIGHTYELLOW_EX + f"\nRecipe for {name}:")
         # Display list with one ingredient per line
@@ -155,7 +155,7 @@ def delete_recipe():
     """
     name = input(
         Fore.LIGHTYELLOW_EX + "Enter the recipe name to delete: "
-        ).strip()
+        ).strip().title()
 
     if name in recipe:
         del recipe[name]
@@ -172,7 +172,7 @@ def delete_ingredient():
     name = input(
         Fore.LIGHTYELLOW_EX +
         "Enter the recipe name to delete an ingredient from: "
-        )
+        ).strip().title()
 
     if name in recipe:
         ingredients = recipe[name]["Ingredients"]

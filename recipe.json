@@ -146,64 +146,6 @@
             "add spices, herbs, vegetables and cook",
             "add tomato concentrate and fresh cream"
         ]
-    },
-    "soup": {
-        "Ingredients": [
-            "water",
-            "butter",
-            "carrot"
-        ],
-        "Instructions": [
-            "chop",
-            "cook",
-            "ezat"
-        ]
-    },
-    "dumplings": {
-        "Ingredients": [
-            "flour",
-            "water",
-            "egg"
-        ],
-        "Instructions": [
-            "mix all"
-        ]
-    },
-    "Potato": {
-        "Ingredients": [
-            "water",
-            "potato"
-        ],
-        "Instructions": [
-            "mix all",
-            "cook"
-        ]
-    },
-    "Chicken soup": {
-        "Ingredients": [
-            "water",
-            "chicken",
-            "carrot",
-            "onion"
-        ],
-        "Instructions": [
-            "chop",
-            "add water",
-            "mix",
-            "cook"
-        ]
-    },
-    "Vege Soup": {
-        "Ingredients": [
-            "water",
-            "vege",
-            "butter",
-            "onion",
-            "* milk"
-        ],
-        "Instructions": [
-            "mix",
-            "all"
-        ]
     }
+
 }
