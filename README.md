@@ -80,6 +80,7 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 
 ### Languages Used
 
+-    [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Content
 
