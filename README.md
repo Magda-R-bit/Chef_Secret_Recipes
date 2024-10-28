@@ -90,6 +90,15 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 
 ### Manual Test Cases and Results
 
+* Testing completed on the below browser:
+  - Chrome
+  - Edge
+  - FireFox
+  - DuckDuckGo
+
+
+
+
 
 |    | Test                        | Steps                                                                          | Expected Results                                          | Actual Results                                           | Pass/Fail | Comments                                                                                   |
 | -- | --------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------- | -------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------ |
