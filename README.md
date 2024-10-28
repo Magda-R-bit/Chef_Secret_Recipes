@@ -78,7 +78,7 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 
 ## Technologies Used
 
-### Languages Used
+### Language Used
 
 -    [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
@@ -149,10 +149,34 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 
 ### Version Control
 
+* The project was developed using the [Code Institute Template](https://github.com/Code-Institute-Org/p3-template), the Gitpod editor, and was pushed to GitHub in the remote repository Chef_Secret_Recipes.
+* Git commands were used to push the code to the repository.
 
 ### Deployment to Heroku
 
+* The project was deployed to Heroku with the following steps:
+  - Create an account and log in to Heroku
+  - Go to the dashboard, click *New*, then *Create new app*
+  - Navigate to *Settings*
+  - Go to *Config Vars*, click *Reveal Config Vars*, and add *PORT* as the KEY, and *8000* as the VALUE. Click *add*
+  - Go to *Buildpacks*, then click *Add buildpack*, in the following order:
+    - Select *python* and click *Add Buildpack*
+    - Select *nodejs* and click *Add Buildpack*
+  - Navigate to the *Deploy* tab at the top
+  - Click *GitHub*, then *Connect to GitHub*
+  - Search for the repository you want to deploy and click *connect*
+  - Select *Enable Automatic Deploys* or *Deploy Branch*
+
+[Link to deployed project](https://chef-secret-recipes-adc6806ffd55.herokuapp.com/)
+
 ### How to clone the repository
+
+- Go to the https://github.com/Magda-R-bit/Chef_Secret_Recipes reposotory on GitHub
+- Click on the Code button located above the project files
+- Select HTTPS and copy the repository link
+- Open your IDE, and paste the copied Git URL into the IDE terminal
+- The project is now created as a local clone
+
 
 ## Credits
 
