@@ -107,6 +107,18 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 
 ### Validation
 
+- [HTML Validator](https://validator.w3.org/)
+
+![Screenshot of html test](screenshots/HTMLValidator.png)
+
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+![Screenshot of css test](screenshots/CSSValidator.png)
+
+- [Python Linter](https://pep8ci.herokuapp.com/)
+
+![Screenshot of Python Linter](screenshots/PythonLinter.png)
+
 ## Bugs
 
 
