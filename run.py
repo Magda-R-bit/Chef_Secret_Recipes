@@ -67,7 +67,7 @@ def add_secret_ingredient():
         secret_ingredient = input(
             Fore.LIGHTYELLOW_EX +
             "Enter the secret ingredient(prefix secret ingredient with *): "
-            ).strip()
+            ).strip().lower()
         recipe[name]["Ingredients"].append(secret_ingredient)
         print(
             Fore.GREEN +
@@ -115,14 +115,15 @@ def search_recipe():
 
 def search_recipe_by_ingredient():
     """
-    Search for recipes that contain a specific ingredient
+    Search for recipes that contain a specific ingredient,
+    including secret ingredients marked with '*'
     """
     ingredient = input(
         Fore.LIGHTYELLOW_EX + "Enter the ingredient to search for: "
-        ).strip()
+        ).strip().lower()
     found_recipes = [
         recipe_name for recipe_name, recipe_data in recipe.items()
-        if any(ingredient == ingr.strip()
+        if any(ingredient == ingr.lstrip("*").strip().lower()
                for ingr in recipe_data["Ingredients"])
     ]
 
@@ -130,10 +131,19 @@ def search_recipe_by_ingredient():
         print(Fore.GREEN + f"\nRecipes that contain '{ingredient}':")
         for recipe_name in found_recipes:
             print(f"- {recipe_name}")
+            # Indicate the Secret Ingredients
+            for ingr in recipe[recipe_name]["Ingredients"]:
+                if ingredient == ingr.lstrip("*").strip().lower():
+                    if ingr.startswith("*"):
+                        print(
+                            f" * Secret Ingredient: {ingr.lstrip("*").strip()}"
+                        )
+                    else:
+                        print(f" Ingredient: {ingr.strip()}")
     else:
         print(
-            Fore.RED + f"No recipes found with the ingredient '{ingredient}'."
-            )
+            Fore.RED +
+            f"No recipes found with the ingredient '{ingredient}'.")
 
 
 def display_all_recipes():

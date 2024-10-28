@@ -137,7 +137,8 @@
             "bay leaves",
             "courgette",
             "parsley",
-            "fresh cream"
+            "fresh cream",
+            "* milk"
         ],
         "Instructions": [
             "chop: onion, garlic, potatoes",
@@ -147,5 +148,4 @@
             "add tomato concentrate and fresh cream"
         ]
     }
-
 }
