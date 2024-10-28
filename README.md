@@ -134,10 +134,15 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 
 ## Bugs
 
+* New recipe not saved in JSON file after restarting program.
+  - When adding a new recipe, everything appeared to work correctly. The recipe was added successfully. However, after restarting the program, the added recipe disappeared.
 
+* Solution
+  - To fix this bug, I used the dump() function to convert the dictionary into JSON format, before saving it to recipe.json. 
 
 ### Unfixed Bugs
 
+* No unfixed bugs.
 
 ## Deployment
 
