@@ -69,12 +69,64 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 ## Features
 
 
-#### Existing Features
+### Existing Features
 
+####  **Main Screen**
 
+The Main Screen displays title "Chef Secret Recipes" along with recipe book, styled using ASCII Art and redesigned in Gitpod.
+The main screen introduces the program's theme and lists available options, allowing users to easily navigate the recipe book. Options include adding recipes, adding a secret ingredient, searching by name or ingredients, displaying all recipes, deleting recipe or a specific ingredient.
 
-#### Future Features:
+![Main Screen](screenshots/MainScreen.png)
 
+####  **Add New Recipe**
+
+The Add New Recipe feature allows users to input a recipe name, ingredients, and step by step instructions. Ingredients are separated by commas, and instructions are saved as numbered steps.
+
+ ![Add New Recipe](screenshots/AddRecipe.gif)
+
+####  **Add Secret Ingredient**
+
+The Add Secret Ingredient feature allows users to input specific ingredient displayed with * that make the meal unique.
+
+![Add Secret Ingredient](screenshots/AddSecret.gif)
+
+####  **Search Recipe by Name**
+
+The Search by Name feature lets users search for recipes using the name, with case-insensitive matching for ease of use. If the recipe is found, the program displays the ingredients and instructions in a clean, formatted layout.
+
+![Search Recipe by Name](screenshots/SearchRecipe.gif)
+
+#### **Search by Ingredient Name**
+
+Users can search recipes by entering an ingredient they have on hand. This feature also matches recipes containing "secret ingredients" that are specially marked, making it easy to discover recipes that can use up specific ingredients.
+
+![Search by Ingredient](screenshots/SearchIngredient.gif)
+
+#### **Display All Recipes**
+
+The Display All Recipes feature shows a list of all stored recipes, providing an overview of what is available in the Chef Secret Recipes Book. 
+
+![Display All](screenshots/DisplayAll.gif)
+
+#### **Delete Recipe**
+
+Users can delete entire recipe if no longer needed. 
+
+![Delete Recipe](screenshots/DeleteRecipe.gif)
+
+#### **Delete Ingredient**
+
+Users can delete an ingredient from the recipe if they do not want to use it.
+After deleting an ingredient, the updated recipe is displayed to confirm changes.
+
+![Delete Ingredient](screenshots/DeleteIngred.gif)
+
+### Future Features:
+
+- Recipe Categories
+- Ingredient Substitutions
+- Meal Planner
+- Shopping List Generator
 
 ## Technologies Used
 
