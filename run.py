@@ -52,6 +52,7 @@ def add_new_recipe():
     recipe[name] = {"Ingredients": ingredients, "Instructions": instructions}
     print(Fore.GREEN + f"Recipe '{name}' added successfully.")
     save()
+    display_recipe(name)
 
 
 def add_secret_ingredient():
@@ -79,6 +80,7 @@ def add_secret_ingredient():
     else:
         print(Fore.RED + f"'{name}' not found in the Chef Secret Recipes.")
     save()
+    display_recipe(name)
 
 
 def save():
@@ -204,6 +206,27 @@ def delete_ingredient():
                 )
     else:
         print(Fore.RED + f"'{name}' not found in the Chef Secret Recipes.")
+    display_recipe(name)
+
+
+def display_recipe(name):
+    """
+    Display the specified recipe by name, including updated ingredients
+    """
+    recipe_data = recipe[name]
+
+    print(Fore.LIGHTYELLOW_EX + f"\nRecipe '{name}':")
+    print(Fore.LIGHTYELLOW_EX + "\nIngredients:")
+    for ingredient in recipe_data["Ingredients"]:
+        if ingredient.startswith("*"):
+            print(f" - Secret Ingredient: {ingredient.lstrip('*').strip()}")
+        else:
+            print(f" - {ingredient}")
+
+    print(Fore.LIGHTYELLOW_EX + "\nInstruction:")
+    for step_number, instruction in enumerate(
+         recipe_data["Instructions"], start=1):
+        print(f" Step {step_number}: {instruction}")
 
 
 def main():
