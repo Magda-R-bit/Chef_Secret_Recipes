@@ -128,6 +128,13 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 - Meal Planner
 - Shopping List Generator
 
+## Design
+
+- [Lucidchart](https://lucid.app/pricing/lucidchart?referer=https%3A%2F%2Flucid.app%2Fusers%2Flogin#/pricing/chart) used to create flowchart.
+- [ASCII Art](https://www.asciiart.eu/books/books) used to create a book drawing.
+- [Pexels](https://www.pexels.com/photo/verity-of-vegetables-952353/) used for searching a background image.
+- Recipes are from my own collection.
+
 ## Technologies Used
 
 ### Language Used
@@ -243,5 +250,4 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 - [Love Sandwiches Walkthrough Project](https://github.com/Magda-R-bit/love-sandwich)
 - [Amulya's Academy](https://www.youtube.com/watch?v=70juN7N13H0)
 - Eric Matthes: "Python Crash Course"
-
 
