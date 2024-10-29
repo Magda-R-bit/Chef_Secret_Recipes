@@ -1,9 +1,9 @@
-# **Chef Secret Recipes Book**
+# **Chef Secret Recipes**
 
 [Project live link](https://chef-secret-recipes-adc6806ffd55.herokuapp.com/)
 
 
-Chef Secret Recipes Book is a Python project designed to create and organize recipes with secret ingredients that make each dish delicious, unique, and special.
+Chef Secret Recipes is a Python project designed to create and organize recipes with secret ingredients that make each dish delicious, unique, and special.
 This tool allows both novice and experienced chefs to add, delete, search for recipes efficiently with all data stored in a recipe.json file. 
 
 Additionally, users can search for a recipes based on ingredients they have on hand, making it easy to decide what to cook with what is already in the fridge.
@@ -17,6 +17,7 @@ Additionally, users can search for a recipes based on ingredients they have on h
 * [User Experience (UX)](#user-experience-ux) 
 * [Features](#features)
 * [Design](#design)
+* [Libraries and Programs](#libraries-and-programs)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
 * [Deployment](#deployment)
@@ -135,15 +136,8 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 - [Pexels](https://www.pexels.com/photo/verity-of-vegetables-952353/) used for searching a background image.
 - Recipes are from my own collection.
 
-## Technologies Used
 
-### Language Used
-
--    [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-
-## Content
-
-### Frameworks, Libraries & Programs Used
+## Libraries and Programs
 
 -  Gitpod
     - The development environment where the project was created and tested.
@@ -155,9 +149,22 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
     - Cloud platform where project was deployed.
 -  [Colorama](https://pypi.org/project/colorama/)
     - A library used to add color to the command-line interface, making it more visually engaging.
-## Testing
+-  [OBS Studio](https://obsproject.com/)
+    - This software was used to record all project features on video.
+-  [EzGif](https://ezgif.com/video-to-gif/ezgif-5-986bf31a0b.mp4)
+    - As Gitpod does not support MP4 files, I used EzGif to convert the videos into GIF format.
 
-### Manual Test Cases and Results
+
+## Technologies
+
+### Language
+
+-    [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+
+## Testing
+  
+### Manual Tests and Results
 
 * Testing completed on the below browser:
   - Chrome
