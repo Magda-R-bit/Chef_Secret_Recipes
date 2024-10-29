@@ -145,7 +145,16 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 
 ### Frameworks, Libraries & Programs Used
 
-
+-  Gitpod
+    - The development environment where the project was created and tested.
+-  JSON
+    - Module used for reading and writing recipe data to a recipe.json file.
+-  [GitHub](https://github.com/Magda-R-bit)
+    - Repository hosting service used for version control.
+-  [Heroku](https://help.heroku.com/)
+    - Cloud platform where project was deployed.
+-  [Colorama](https://pypi.org/project/colorama/)
+    - A library used to add color to the command-line interface, making it more visually engaging.
 ## Testing
 
 ### Manual Test Cases and Results
