@@ -187,7 +187,7 @@ def delete_ingredient():
     if name in recipe:
         ingredients = recipe[name]["Ingredients"]
         ingredient_to_delete = input(
-            "Enter the name of the ingredient to delete: ")
+            "Enter the name of the ingredient to delete: ").lower()
         if ingredient_to_delete in ingredients:
             ingredients.remove(ingredient_to_delete)
             print(
