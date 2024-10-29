@@ -232,7 +232,16 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 
 ## Credits
 
+ - **Special Thanks**:
+   - **Spencer Barriball**- For your mentorship. Your insights and advices were crucial to the success of this project.
 
 ### Inspiration
+
+- [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+- [stackoverflow](https://stackoverflow.com/)
+- [Julia-Wagner](https://github.com/Julia-Wagner/PyChef)
+- [Love Sandwiches Walkthrough Project](https://github.com/Magda-R-bit/love-sandwich)
+- [Amulya's Academy](https://www.youtube.com/watch?v=70juN7N13H0)
+- Eric Matthes: "Python Crash Course"
 
 
