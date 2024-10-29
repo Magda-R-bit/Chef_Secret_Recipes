@@ -9,7 +9,7 @@ This tool allows both novice and experienced chefs to add, delete, search for re
 Additionally, users can search for a recipes based on ingredients they have on hand, making it easy to decide what to cook with what is already in the fridge.
 
 
-![Screenshot of Main Page](screenshots/MainPage.png)
+![Screenshot of Main Page](screenshots/mainPage.png)
 
 
 ## Contents
@@ -23,9 +23,9 @@ Additionally, users can search for a recipes based on ingredients they have on h
 * [Credits](#credits)
 
 
-## User Experience
+## User Experience (UX)
 
-- ### User Stories:
+- ### User Stories
 
     #### 1. Adding new recipes
 
@@ -59,12 +59,12 @@ Additionally, users can search for a recipes based on ingredients they have on h
      * As a user, I want error messages when I enter invalid data (like an incorrect recipe name) so I can easily correct my input.
 
 
-## Flowchart
+- ### Flowchart
 
 The flowchart for Chef Secret Recipe Book visualizes the structure and main operations.
 
 
-![Screenshot of Flowchart](screenshots/Flowchart.png)
+![Screenshot of Flowchart](screenshots/flowchart.png)
 
 ## Features
 
@@ -76,50 +76,50 @@ The flowchart for Chef Secret Recipe Book visualizes the structure and main oper
 The Main Screen displays title "Chef Secret Recipes" along with recipe book, styled using ASCII Art and redesigned in Gitpod.
 The main screen introduces the program's theme and lists available options, allowing users to easily navigate the recipe book. Options include adding recipes, adding a secret ingredient, searching by name or ingredients, displaying all recipes, deleting recipe or a specific ingredient.
 
-![Main Screen](screenshots/MainScreen.png)
+![Main Screen](screenshots/mainScreen.png)
 
 ####  **Add New Recipe**
 
 The Add New Recipe feature allows users to input a recipe name, ingredients, and step by step instructions. Ingredients are separated by commas, and instructions are saved as numbered steps.
 
- ![Add New Recipe](screenshots/AddRecipe.gif)
+ ![Add New Recipe](screenshots/addRecipe.gif)
 
 ####  **Add Secret Ingredient**
 
 The Add Secret Ingredient feature allows users to input specific ingredient displayed with * that make the meal unique.
 
-![Add Secret Ingredient](screenshots/AddSecret.gif)
+![Add Secret Ingredient](screenshots/addSecret.gif)
 
 ####  **Search Recipe by Name**
 
 The Search by Name feature lets users search for recipes using the name, with case-insensitive matching for ease of use. If the recipe is found, the program displays the ingredients and instructions in a clean, formatted layout.
 
-![Search Recipe by Name](screenshots/SearchRecipe.gif)
+![Search Recipe by Name](screenshots/searchRecipe.gif)
 
 #### **Search by Ingredient Name**
 
 Users can search recipes by entering an ingredient they have on hand. This feature also matches recipes containing "secret ingredients" that are specially marked, making it easy to discover recipes that can use up specific ingredients.
 
-![Search by Ingredient](screenshots/SearchIngredient.gif)
+![Search by Ingredient](screenshots/searchIngredient.gif)
 
 #### **Display All Recipes**
 
 The Display All Recipes feature shows a list of all stored recipes, providing an overview of what is available in the Chef Secret Recipes Book. 
 
-![Display All](screenshots/DisplayAll.gif)
+![Display All](screenshots/displayAll.gif)
 
 #### **Delete Recipe**
 
 Users can delete entire recipe if no longer needed. 
 
-![Delete Recipe](screenshots/DeleteRecipe.gif)
+![Delete Recipe](screenshots/deleteRecipe.gif)
 
 #### **Delete Ingredient**
 
 Users can delete an ingredient from the recipe if they do not want to use it.
 After deleting an ingredient, the updated recipe is displayed to confirm changes.
 
-![Delete Ingredient](screenshots/DeleteIngred.gif)
+![Delete Ingredient](screenshots/deleteIngred.gif)
 
 ### Future Features:
 
@@ -187,19 +187,19 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 
 - [HTML Validator](https://validator.w3.org/)
 
-![Screenshot of html test](screenshots/HTMLValidator.png)
+![Screenshot of html test](screenshots/htmlValidator.png)
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-![Screenshot of css test](screenshots/CSSValidator.png)
+![Screenshot of css test](screenshots/cssValidator.png)
 
 - [Python Linter](https://pep8ci.herokuapp.com/)
 
-![Screenshot of Python Linter](screenshots/PythonLinter.png)
+![Screenshot of Python Linter](screenshots/pythonLinter.png)
 
 - Lighthouse Testing
 
-![Lighthouse Testing](screenshots/Lighthouse.png)
+![Lighthouse Testing](screenshots/lighthouse.png)
 
 ## Bugs
 
