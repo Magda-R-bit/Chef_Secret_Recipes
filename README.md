@@ -210,11 +210,27 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 
 ## Bugs
 
-* New recipe not saved in JSON file after restarting program.
-  - When adding a new recipe, everything appeared to work correctly. The recipe was added successfully. However, after restarting the program, the added recipe disappeared.
+1. New recipe not saved in JSON file after restarting program.
 
-* Solution
-  - To fix this bug, I used the dump() function to convert the dictionary into JSON format, before saving it to recipe.json. 
+    -  When adding a new recipe, everything appeared to work correctly. The recipe was added successfully. However, after restarting the program, the added recipe disappeared.
+
+    - Solution
+      - To fix this bug, I used the dump() function to convert the dictionary into JSON format, before saving it to recipe.json.
+
+2. The recipe was not found, when recipe name was entered with lowercase letters.
+
+    -  When searching for a recipe by name, an error occurred if the name was typed in lowercase letters because the search function was case-sensitive.
+
+    - Solution
+      - To fix this, I applied title() to the input to ensure consistent matching.
+
+3. The recipe was not found, when searching by ingredient name.
+
+    - When searching for a recipe by ingredient name, an error occurred if name was typed in uppercase letters.
+
+    - Solution
+      - I fixed this, by applying lower() to the input.
+
 
 ### Unfixed Bugs
 
