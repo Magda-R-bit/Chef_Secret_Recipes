@@ -278,8 +278,10 @@ After deleting an ingredient, the updated recipe is displayed to confirm changes
 
 - [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 - [stackoverflow](https://stackoverflow.com/)
-- [Julia-Wagner](https://github.com/Julia-Wagner/PyChef)
+- [Julia-Wagner](https://github.com/Julia-Wagner/PyChef) 
+  - This project inspired me to add background image and replace screenshots with GIFs to highlight the features.
 - [Love Sandwiches Walkthrough Project](https://github.com/Magda-R-bit/love-sandwich)
 - [Amulya's Academy](https://www.youtube.com/watch?v=70juN7N13H0)
+- [CS50's Introduction to Programming with Python](https://www.harvardonline.harvard.edu/course/cs50s-introduction-programming-python)
 - Eric Matthes: "Python Crash Course"
 
